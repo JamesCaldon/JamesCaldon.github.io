@@ -136,18 +136,41 @@
   </q-page>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { onMounted, onUnmounted, ref } from 'vue';
+
+let scale = ref(1);
+const onResize = (event?: UIEvent) => {
+  const fontSizeString = window.getComputedStyle(document.documentElement).getPropertyValue('font-size')
+  const fontSize = Number(fontSizeString.substring(0, fontSizeString.length - 2))
+  const width = window.innerWidth;
+  scale.value = width / (120 * fontSize);
+}
+
+onMounted(() => { window.addEventListener("resize", onResize) })
+onUnmounted(() => { window.removeEventListener("resize", onResize) })
+onResize();
+</script>
 <style scoped lang="scss">
 .resume-container {
-  padding: 5vh 15vw;
+  display: flex;
+  transform: scale(v-bind(scale));
+  transform-origin: left top;
 }
 
 .resume {
+  margin-left: auto;
+  margin-right: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
   padding: 3em;
   aspect-ratio: 0.7071;
   background: whitesmoke;
   gap: 3em;
   overflow: hidden;
+
+  width: 134em; //TODO magic number eww
+
 
   h1,
   h2,
