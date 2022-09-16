@@ -1,13 +1,13 @@
 <template>
   <q-page class="resume-container">
-    <section class="resume column">
+    <section class="resume row">
       <header class="title grid">
-        <section class="grid-item">
-          <img src="../assets/profile.jpg" />
+        <section class="grid-item column" style="justify-content: center;">
+          <img src="../assets/profile.jpg" style="width: 100%; aspect-ratio: 1 / 1;" />
         </section>
         <section class="grid-item">
-          <h2>James Caldon</h2>
-          <h5 style="color: dimgrey">Software Engineer & Data Scientist</h5>
+          <h1>James Caldon</h1>
+          <h2 style="color: dimgrey;">Software Engineer & Data Scientist</h2>
           <p>Graduate programmer with 4 years of study, focused on algorithms, software architecture, cloud computing
             (AWS, Docker), of which are the foundation for many personal hobby projects over the past decade. Capable of
             producing clean, efficient, and readable code in a variety of languages not limited to:
@@ -28,9 +28,9 @@
             and a First-Class Honours dissertation mark of > 80.</p>
         </section>
       </header>
-      <section class="main grid col-grow">
+      <section class="main grid">
         <section class="grid-item">
-          <h4>Contact</h4>
+          <h3>Contact</h3>
           <address class="contact">
             <q-icon name="email" size="2em"></q-icon>
             <span>
@@ -48,7 +48,7 @@
               <p><a href="https://www.linkedin.com/in/james-caldon/">https://www.linkedin.com/in/james-caldon/</a></p>
             </span>
           </address>
-          <h4>Languages and Libraries</h4>
+          <h3>Languages and Libraries</h3>
           <section class="skills">
             <p>Python</p><meter value="0.9"></meter>
             <p>.net C#</p><meter value="0.7"></meter>
@@ -65,7 +65,7 @@
           </section>
         </section>
         <section class="grid-item">
-          <h4>Education</h4>
+          <h3>Education</h3>
           <div class="education row">
             <div>
               <b>BSc in Computer Science (Honours) WAM > 80</b>
@@ -83,7 +83,7 @@
               <div class="date">2016</div>
             </div>
           </div>
-          <h4>Experience</h4>
+          <h3>Experience</h3>
           <div style="background-color: #d3d3d3; padding: 1em">
             <div class="date">2017 - 2022</div>
             <div><i>Wesley College</i></div>
@@ -95,7 +95,7 @@
             <p>When not answering tickets via ManageEngine ServiceDesk Plus, duties involved managing the imaging
               system, OS environment and applications and their respective licensing (with SCCM). In house
               solutions/augmentations
-              to out of external support legacy applications were created. Developed in house software to extend to
+              to out of external support legacy applications were created. Developed software to extend to
               functionality of SCCM with the use of various technologies.</p>
           </div>
           <div>
@@ -119,8 +119,8 @@
           </div>
           <div>
             <div class="date">2014</div>
-            <div><i>Software Tester and Presenter</i></div>
-            <b>Thales</b>
+            <div><i>Thales</i></div>
+            <b>Software Tester and Presenter</b>
             <p>Prepared and delivered presentations, debugged software and took part in collaborative work.</p>
           </div>
           <div>
@@ -144,11 +144,11 @@ const onResize = (event?: UIEvent) => {
   const fontSizeString = window.getComputedStyle(document.documentElement).getPropertyValue('font-size')
   const fontSize = Number(fontSizeString.substring(0, fontSizeString.length - 2))
   const width = window.innerWidth;
-  scale.value = width / (120 * fontSize);
+  scale.value = width >= 794 ? 1 : width / (50 * fontSize);
 }
 
-onMounted(() => { window.addEventListener("resize", onResize) })
-onUnmounted(() => { window.removeEventListener("resize", onResize) })
+onMounted(() => { window.addEventListener('resize', onResize) })
+onUnmounted(() => { window.removeEventListener('resize', onResize) })
 onResize();
 </script>
 <style scoped lang="scss">
@@ -156,6 +156,11 @@ onResize();
   display: flex;
   transform: scale(v-bind(scale));
   transform-origin: left top;
+  font-size: xx-small;
+}
+
+:deep(.resume-container) {
+  font-size: xx-small;
 }
 
 .resume {
@@ -164,20 +169,29 @@ onResize();
   flex-grow: 0;
   flex-shrink: 0;
   padding: 3em;
-  aspect-ratio: 0.7071;
   background: whitesmoke;
   gap: 3em;
   overflow: hidden;
-
-  width: 134em; //TODO magic number eww
-
+  width: 794px;
+  height: 1123px;
 
   h1,
   h2,
-  h3,
-  h4,
-  h5 {
+  h3 {
     line-height: 0em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2,
+  h3 {
+    font-size: 2em;
+  }
+
+  p {
+    margin-bottom: 0.5em;
   }
 
   .date,
@@ -189,7 +203,6 @@ onResize();
   .grid {
     display: grid;
     grid-template-columns: 35% auto;
-    gap: 3em;
     border-top: 4px solid grey;
     border-bottom: 4px solid grey;
     padding: 3em 0;
@@ -204,6 +217,7 @@ onResize();
 
     .grid-item:nth-child(2) {
       border-left: 4px solid grey;
+      padding: 0 calc(2em + 4px);
     }
   }
 }
