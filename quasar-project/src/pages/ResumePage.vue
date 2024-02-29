@@ -8,14 +8,12 @@
         <section class="grid-item">
           <h1>James Caldon</h1>
           <h2 style="color: dimgrey;">Software Engineer & Data Scientist</h2>
-          <p>Graduate programmer with 4 years of study, focused on algorithms, software architecture, cloud computing
+          <p>Full Stack Software Developer with ~2 years of software specific commercial experience, supported by ~5 years of commercial experience and 4 years of study, focused on algorithms, software architecture, cloud computing
             (AWS, Docker), of which are the foundation for many personal hobby projects over the past decade. Capable of
             producing clean, efficient, and readable code in a variety of languages not limited to:
           <ul>
             <li>
-              high-level languages/frameworks such as Python, .net C#, Java, SQL, HTML/JavaScript/Typescript/CSS, Vue JS
-              (and some React), Electron, NodeJS, and MongoDB.
-
+              high-level languages/frameworks such as Python, ASP.NET, .NET C#, Java, SQL, HTML/JavaScript/Typescript/CSS, React and Vue JS, Electron, NodeJS, and MongoDB.
             </li>
             <li>
               low-level system languages such as C, C++ and experience with the windows API (win32) and NodeJS native
@@ -50,17 +48,19 @@
           </address>
           <h3>Languages and Libraries</h3>
           <section class="skills">
-            <p>Python</p><meter value="0.9"></meter>
-            <p>.net C#</p><meter value="0.7"></meter>
+            <p>.NET C#</p><meter value="0.95"></meter>
+            <p>ASP.NET C#</p><meter value="0.95"></meter>
             <p>Javascript/Typescript</p><meter value="0.95"></meter>
+            <p>T-SQL</p><meter value="0.9"></meter>
+            <p>Python</p><meter value="0.9"></meter>
             <p>Vue JS</p><meter value="0.8"></meter>
-            <p>React</p><meter value="0.6"></meter>
+            <p>React</p><meter value="0.7"></meter>
             <p>Electron</p><meter value="0.75"></meter>
             <p>NodeJS</p><meter value="0.6"></meter>
             <p>NodeJS Native Addons</p><meter value="0.8"></meter>
             <p>MongoDB</p><meter value="0.5"></meter>
             <p>C</p><meter value="0.5"></meter>
-            <p>C++</p><meter value="0.7"></meter>
+            <p>C++</p><meter value="0.6"></meter>
             <p>WinAPI</p><meter value="0.55"></meter>
           </section>
         </section>
@@ -70,12 +70,7 @@
             <div>
               <b>BSc in Computer Science (Honours) WAM > 80</b>
               <div>University of Western Australia</div>
-              <div class="date">2021</div>
-            </div>
-            <div>
-              <b>BSc in Computer Science & Data Science</b>
-              <div>University of Western Australia</div>
-              <div class="date">2017 - 2019</div>
+              <div class="date">2017 - 2021</div>
             </div>
             <div>
               <b>WACE as School Dux of Computer Science</b>
@@ -85,6 +80,37 @@
           </div>
           <h3>Experience</h3>
           <div style="background-color: #d3d3d3; padding: 1em">
+            <div class="date">2022 - Current</div>
+            <div><i>Ascora</i></div>
+            <b>Full Stack Developer</b>
+            <p>Employed expertise in SQL, ORMs, C#, ASP.NET, Razor, JavaScript, KendoUI, JQuery, to architect, scope, and implement new features, and integrate substantial performance and bugfixes to existing feature sets;</p>
+            <ul>
+              <li>
+                Designed, scoped and implemented a feature rich Case (Ticket) Management System which integrates with multiple distinct third party APIs, including Zoom, Microsoft Exchange, Graph, POP, SMTP, IMAP.
+              </li>
+              <li>
+                Completely reworked from the ground up an existing implementation of a product and service based shop for our SAAS customers, which integrated with email notifications, AHA cards and third party secure credit card processing.
+              </li>
+              <li>
+                Developed from conception to delivery a Global Search and Saved Searches feature which allowed for easy access to all relevant entities (Jobs, Quotes, Enquries, Invoices etc.) in the SAAS product.
+                Global Search sub-features include hotkey support and virtual scrolling supported by performant queries and indexes.
+                Saved Searches was designed with a page agnostic implementation, which could be added to any page with any search filters, grid sorts, toggleable visibility grid columns, via the use of adapters.
+              </li>
+              <li>
+                Architected and implemented a financially robust in-depth nested Progress Claim (Partial Invoicing) for Jobs, which cleanly supported various different financial requirements, including standard, sliding-scale, and banded sliding-scale retentions, plus variations and specific tax considerations.
+              </li>
+            </ul>
+            Performance/maintainability enhancements include:
+            <ul>
+              <li>
+                Decreased Invoice generation time from ~30+ seconds to &lt;1 second via many technical optimizations.
+              </li>
+              <li>
+                Optimized an internal shop order page through the use of intricately designed, yet maintainable queries, which resulted in loading times decreasing from 30 minutes to a few seconds.
+              </li>
+            </ul>
+          </div>
+          <div>
             <div class="date">2017 - 2022</div>
             <div><i>Wesley College</i></div>
             <b>ILT Support Officer</b>
@@ -99,36 +125,10 @@
               functionality of SCCM with the use of various technologies.</p>
           </div>
           <div>
-            <div class="date">2017 - 2019</div>
-            <div><i>Freelance</i></div>
-            <b>Private Cello Tutor</b>
-            <p>Provided and prepared personalised 1-on-1 tutoring and mentoring for aspiring cello students.</p>
-          </div>
-          <div>
-            <div class="date">2016</div>
-            <div><i>Relay for Life</i></div>
-            <b>Volunteer</b>
-            <p>Information desk duties plus information brochure handouts.</p>
-          </div>
-          <div>
-            <div class="date">2015</div>
-            <div><i>Freelance</i></div>
-            <b>Private English and Mathematics Tutor</b>
-            <p>Taught junior and middle school students in the areas of English and Mathematics by providing a
-              structured lesson plan.</p>
-          </div>
-          <div>
             <div class="date">2014</div>
             <div><i>Thales</i></div>
             <b>Software Tester and Presenter</b>
             <p>Prepared and delivered presentations, debugged software and took part in collaborative work.</p>
-          </div>
-          <div>
-            <div class="date">2014</div>
-            <div><i>Riverview Church</i></div>
-            <b>Mentor</b>
-            <p>Volunteered as a mentor for children in a classroom environment, organised lesson plans and provided
-              1-on-1 mentoring.</p>
           </div>
         </section>
       </section>
@@ -205,7 +205,7 @@ onResize();
     grid-template-columns: 35% auto;
     border-top: 4px solid grey;
     border-bottom: 4px solid grey;
-    padding: 3em 0;
+    padding: 1em 0;
 
     .grid-item {
       padding: 0 2em;
