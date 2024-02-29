@@ -1,6 +1,7 @@
 # James caldon GitHub pages (jamescaldon-github-pages)
 
-A static SPA based resume
+A static SPA based resume.
+Uses GitHub Actions to deploy to GitHub Pages.
 
 ## Install the dependencies
 
