@@ -22,8 +22,7 @@
           </ul>
           </p>
           <p>Significant machine learning experience (TensorFlow, Keras; PyTorch) specialising in convolutional neural
-            networks leading to a pending publication in the Monthly Notices of the Royal Astronomical Society (MNRAS)
-            and a First-Class Honours dissertation mark of > 80.</p>
+            networks resulting in a First-Class Honours dissertation mark of > 80.</p>
         </section>
       </header>
       <section class="main grid">
@@ -86,13 +85,13 @@
             <p>Employed expertise in SQL, ORMs, C#, ASP.NET, Razor, JavaScript, KendoUI, JQuery, to architect, scope, and implement new features, and integrate substantial performance and bugfixes to existing feature sets;</p>
             <ul>
               <li>
-                Designed, scoped and implemented a feature rich Case (Ticket) Management System which integrates with multiple distinct third party APIs, including Zoom, Microsoft Exchange, Graph, POP, SMTP, IMAP.
+                Designed, scoped and implemented a feature rich Case (Ticket) Management System which integrates with multiple distinct third-party APIs, including Zoom, Microsoft Exchange, Graph, POP, SMTP, IMAP.
               </li>
               <li>
-                Completely reworked from the ground up an existing implementation of a product and service based shop for our SAAS customers, which integrated with email notifications, AHA cards and third party secure credit card processing.
+                Completely reworked from the ground up an existing implementation of a product and service-based shop for our SAAS customers, which integrated with email notifications, AHA cards and third-party secure credit card processing.
               </li>
               <li>
-                Developed from conception to delivery a Global Search and Saved Searches feature which allowed for easy access to all relevant entities (Jobs, Quotes, Enquries, Invoices etc.) in the SAAS product.
+                Developed from conception to delivery a Global Search and Saved Searches feature which allowed for easy access to all relevant entities (Jobs, Quotes, Enquiries, Invoices etc.) in the SAAS product.
                 Global Search sub-features include hotkey support and virtual scrolling supported by performant queries and indexes.
                 Saved Searches was designed with a page agnostic implementation, which could be added to any page with any search filters, grid sorts, toggleable visibility grid columns, via the use of adapters.
               </li>
