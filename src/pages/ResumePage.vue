@@ -8,16 +8,15 @@
         <section class="grid-item">
           <h1>James Caldon</h1>
           <h2 style="color: dimgrey;">Software Engineer & Data Scientist</h2>
-          <p>Full Stack Software Developer with ~2 years of software specific commercial experience, supported by ~5 years of commercial experience and 4 years of study, focused on algorithms, software architecture, cloud computing
-            (AWS, Docker), of which are the foundation for many personal hobby projects over the past decade. Capable of
-            producing clean, efficient, and readable code in a variety of languages not limited to:
+          <p>Full Stack Software Developer specialising in .NET C# with ~2 years of commercial software development experience,
+            supported by ~5 years of commercial experience in IT and 4 years of study, focused on algorithms, software architecture, cloud computing (AWS, Docker),
+            of which are the foundation for many personal hobby projects over the past decade. Capable of producing clean, efficient, and readable code in a variety of languages not limited to:
           <ul>
             <li>
-              high-level languages/frameworks such as Python, ASP.NET, .NET C#, Java, SQL, HTML/JavaScript/Typescript/CSS, React and Vue JS, Electron, NodeJS, and MongoDB.
+              high-level languages/frameworks such as .NET C#, ASP.NET, SQL, HTML/JavaScript/Typescript/CSS, React JS, Vue JS and Electron.
             </li>
             <li>
-              low-level system languages such as C, C++ and experience with the windows API (win32) and NodeJS native
-              addons.
+              low-level system languages such as C, C++ and experience with the windows API (win32) and NodeJS native addons.
             </li>
           </ul>
           </p>
@@ -82,7 +81,7 @@
             <div class="date">2022 - Current</div>
             <div><i>Ascora</i></div>
             <b>Full Stack Developer</b>
-            <p>Employed expertise in SQL, ORMs, C#, ASP.NET, Razor, JavaScript, KendoUI, JQuery, to architect, scope, and implement new features, and integrate substantial performance and bugfixes to existing feature sets;</p>
+            <p>Employed expertise in C#, ASP.NET, Razor, JavaScript, KendoUI, JQuery, ORMs and SQL to architect, scope, and implement new features, and integrate performance and bugfixes to existing feature sets;</p>
             <ul>
               <li>
                 Designed, scoped and implemented a feature rich Case (Ticket) Management System which integrates with multiple distinct third-party APIs, including Zoom, Microsoft Exchange, Graph, POP, SMTP, IMAP.
@@ -105,7 +104,7 @@
                 Decreased Invoice generation time from ~30+ seconds to &lt;1 second via many technical optimizations.
               </li>
               <li>
-                Optimized an internal shop order page through the use of intricately designed, yet maintainable queries, which resulted in loading times decreasing from 30 minutes to a few seconds.
+                Optimized an internal shop order page by identifying and refactoring queries which suffered from N+1 issues and missing indices, resulting in loading times decreasing from 30 minutes to a few seconds.
               </li>
             </ul>
           </div>
